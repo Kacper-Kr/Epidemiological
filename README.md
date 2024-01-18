@@ -2,7 +2,7 @@ Please, read the following before participating:
 
 <a href="About.html" target=”_blank”>About</a>
 
-Epidemiological is a epidemiology/clinical microbiology virtual escape room with the purpose of educating undergraduate microbiologists about the various biochemical tests that can be done to identify pathogens, as well as what an epidemiologist does. It can take about an hour to complete. Any resemblances to real places or people is completely coincidental, and any currencies, people or places mentioned in the escape room are completely fictitious.
+Epidemiological is a epidemiology/clinical microbiology virtual escape room with the purpose of educating undergraduate microbiologists about the various biochemical tests that can be done to identify pathogens, as well as what an epidemiologist does. It can take about an hour to complete.
 
 <a href="Epidemiological.html" target=”_blank”>Attempt the Virtual Escape Room</a>
 
