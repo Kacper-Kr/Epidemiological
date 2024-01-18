@@ -1,4 +1,4 @@
-This project is intended to find out if gamification of learning material is an effective revision resource, or substitute for traditional teaching (Didactics) specifically in the teaching of Undergraduate Microbiology
+This project is intended to find out if gamification of learning material is an effective revision resource, or substitute for traditional teaching (Didactics) specifically in the teaching of Undergraduate Microbiology, conducted at University of Strathclyde.
 
 Participation is entirely voluntary, and information is only collected using the survey (No information is stored while playing the virtual escape room provided, after it is completed).
 
