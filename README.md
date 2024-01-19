@@ -57,12 +57,12 @@ It will be kept for as long as it is necessary, and will be stored on Onedrive.
 Email either of the contact details below if you would like to know more about the progression of the project.
 
 
-**<ins>Researcher contact details:</ins>**
+**Researcher contact details:**
 
 Kacper Krasowski: kacper.krasowski.2020@uni.strath.ac.uk
 
+**Chief Investigator details:**
 
-**<ins>Chief Investigator details:</ins>**
 Dr Morgan Feeney: morgan.feeney@strath.ac.uk
 
 
