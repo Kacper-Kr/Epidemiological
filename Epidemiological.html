@@ -549,7 +549,7 @@ Cytocoins: &lt;&lt;set _num to $money&gt;&gt;&lt;&lt;if _num &lt; 0&gt;&gt;-&lt;
 */&lt;div style=&quot;float:left; width:55vw;&quot;&gt;&lt;img src=&quot;Assets/Dashboard.svg&quot; class=&quot;bigicon&quot;&gt;&lt;h1&gt;Dashboard&lt;/h1&gt;&lt;/div&gt;&lt;div style=&quot;float:right; width:18vw;&quot;&gt;
 [[Review]] &lt;&lt;if $reviewresearch.length == 0 and $reviewlabtests == 0 and $reviewhealthmeasures == 0&gt;&gt;&lt;img src=&quot;Assets/Hints Empty.svg&quot; class=&quot;smallicon&quot;&gt;&lt;&lt;else&gt;&gt;&lt;img src=&quot;Assets/Hints.svg&quot; class=&quot;smallicon&quot;&gt;&lt;&lt;/if&gt;&gt;
 Actions: $actions/$maxactions
-Cytocoins: &lt;&lt;set _num to $money&gt;&gt;&lt;&lt;if _num &lt; 0&gt;&gt;-&lt;&lt;set _num to _num*-1&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;set _numstring to &quot;&quot;&gt;&gt;&lt;&lt;for _i to _num; _i gte 1; _i = Math.trunc(_i/1000)&gt;&gt;&lt;&lt;if (&quot;&quot;+_i).length &lt; 4&gt;&gt;&lt;&lt;set _numstring to (_i+_numstring)&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;for  _j to (&quot;&quot; +(_i - (Math.trunc(_i/1000)*1000))); _j.length&lt;4; _j = &quot;0&quot;+_j&gt;&gt;&lt;&lt;if _j.length == 3&gt;&gt;&lt;&lt;set _numstring to &quot;,&quot;+_j+_numstring&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/for&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/for&gt;&gt;&lt;&lt;if _numstring == &quot;&quot;&gt;&gt;&lt;&lt;set _numstring to &quot;0&quot;&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;print _numstring&gt;&gt;&lt;img src=&quot;Assets/Cytocoins.svg&quot; class=&quot;smallicon&quot;&gt;
+&lt;&lt;set _num to $money&gt;&gt;&lt;&lt;if _num &lt; 0&gt;&gt;-&lt;&lt;set _num to _num*-1&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;set _numstring to &quot;&quot;&gt;&gt;&lt;&lt;for _i to _num; _i gte 1; _i = Math.trunc(_i/1000)&gt;&gt;&lt;&lt;if (&quot;&quot;+_i).length &lt; 4&gt;&gt;&lt;&lt;set _numstring to (_i+_numstring)&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;for  _j to (&quot;&quot; +(_i - (Math.trunc(_i/1000)*1000))); _j.length&lt;4; _j = &quot;0&quot;+_j&gt;&gt;&lt;&lt;if _j.length == 3&gt;&gt;&lt;&lt;set _numstring to &quot;,&quot;+_j+_numstring&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/for&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/for&gt;&gt;&lt;&lt;if _numstring == &quot;&quot;&gt;&gt;&lt;&lt;set _numstring to &quot;0&quot;&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;print _numstring&gt;&gt;&lt;img src=&quot;Assets/Cytocoins.svg&quot; class=&quot;smallicon&quot;&gt;
 &lt;/div&gt;&lt;div style=&quot;float:right; width:20vw;&quot;&gt;
 [[Inbox]] &lt;&lt;if $mailread.includes(false)&gt;&gt;&lt;img src=&quot;Assets/Mail Unread.svg&quot; class=&quot;smallicon&quot;&gt;&lt;&lt;else&gt;&gt;&lt;img src=&quot;Assets/Mail Read.svg&quot; class=&quot;smallicon&quot;&gt;&lt;&lt;/if&gt;&gt;
 Day: $days ($currentshortdate)
@@ -588,7 +588,7 @@ Initial Population: &lt;&lt;set _num to ($susceptible + $infected + $recovered +
 &lt;img src=&quot;Assets/Dead.svg&quot; class=&quot;smallicon&quot;&gt; Unknown &lt;/div&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="6" name="Lab Tests" tags="lab" position="775,850" size="200,100">&lt;div style=&quot;float:left; width:75vw;&quot;&gt;&lt;img src=&quot;Assets/Lab Tests.svg&quot; class=&quot;bigicon&quot;&gt;&lt;h1&gt;Lab Tests&lt;/h1&gt;&lt;/div&gt;&lt;div style=&quot;float:right; width:18vw;&quot;&gt;
 [[Dashboard]] &lt;img src=&quot;Assets/Dashboard.svg&quot; class=&quot;smallicon&quot;&gt;
 Actions: $actions/$maxactions
-Cytocoins: &lt;&lt;set _num to $money&gt;&gt;&lt;&lt;if _num &lt; 0&gt;&gt;-&lt;&lt;set _num to _num*-1&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;set _numstring to &quot;&quot;&gt;&gt;&lt;&lt;for _i to _num; _i gte 1; _i = Math.trunc(_i/1000)&gt;&gt;&lt;&lt;if (&quot;&quot;+_i).length &lt; 4&gt;&gt;&lt;&lt;set _numstring to (_i+_numstring)&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;for  _j to (&quot;&quot; +(_i - (Math.trunc(_i/1000)*1000))); _j.length&lt;4; _j = &quot;0&quot;+_j&gt;&gt;&lt;&lt;if _j.length == 3&gt;&gt;&lt;&lt;set _numstring to &quot;,&quot;+_j+_numstring&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/for&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/for&gt;&gt;&lt;&lt;if _numstring == &quot;&quot;&gt;&gt;&lt;&lt;set _numstring to &quot;0&quot;&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;print _numstring&gt;&gt;&lt;img src=&quot;Assets/Cytocoins.svg&quot; class=&quot;smallicon&quot;&gt;
+&lt;&lt;set _num to $money&gt;&gt;&lt;&lt;if _num &lt; 0&gt;&gt;-&lt;&lt;set _num to _num*-1&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;set _numstring to &quot;&quot;&gt;&gt;&lt;&lt;for _i to _num; _i gte 1; _i = Math.trunc(_i/1000)&gt;&gt;&lt;&lt;if (&quot;&quot;+_i).length &lt; 4&gt;&gt;&lt;&lt;set _numstring to (_i+_numstring)&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;for  _j to (&quot;&quot; +(_i - (Math.trunc(_i/1000)*1000))); _j.length&lt;4; _j = &quot;0&quot;+_j&gt;&gt;&lt;&lt;if _j.length == 3&gt;&gt;&lt;&lt;set _numstring to &quot;,&quot;+_j+_numstring&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/for&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/for&gt;&gt;&lt;&lt;if _numstring == &quot;&quot;&gt;&gt;&lt;&lt;set _numstring to &quot;0&quot;&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;print _numstring&gt;&gt;&lt;img src=&quot;Assets/Cytocoins.svg&quot; class=&quot;smallicon&quot;&gt;
 
 &lt;/div&gt;/*
 
@@ -617,7 +617,7 @@ Cytocoins: &lt;&lt;set _num to $money&gt;&gt;&lt;&lt;if _num &lt; 0&gt;&gt;-&lt;
 &lt;&lt;/script&gt;&gt;&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="7" name="Health Measures" tags="health-measures" position="1000,850" size="200,100">&lt;div style=&quot;float:left; width:75vw;&quot;&gt;&lt;img src=&quot;Assets/Health Measures.svg&quot; class=&quot;bigicon&quot;&gt;&lt;h1&gt;Health Measures&lt;/h1&gt;&lt;/div&gt;&lt;div style=&quot;float:right; width:18vw;&quot;&gt;
 [[Dashboard]] &lt;img src=&quot;Assets/Dashboard.svg&quot; class=&quot;smallicon&quot;&gt;
 Actions: $actions/$maxactions
-Cytocoins: &lt;&lt;set _num to $money&gt;&gt;&lt;&lt;if _num &lt; 0&gt;&gt;-&lt;&lt;set _num to _num*-1&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;set _numstring to &quot;&quot;&gt;&gt;&lt;&lt;for _i to _num; _i gte 1; _i = Math.trunc(_i/1000)&gt;&gt;&lt;&lt;if (&quot;&quot;+_i).length &lt; 4&gt;&gt;&lt;&lt;set _numstring to (_i+_numstring)&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;for  _j to (&quot;&quot; +(_i - (Math.trunc(_i/1000)*1000))); _j.length&lt;4; _j = &quot;0&quot;+_j&gt;&gt;&lt;&lt;if _j.length == 3&gt;&gt;&lt;&lt;set _numstring to &quot;,&quot;+_j+_numstring&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/for&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/for&gt;&gt;&lt;&lt;if _numstring == &quot;&quot;&gt;&gt;&lt;&lt;set _numstring to &quot;0&quot;&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;print _numstring&gt;&gt;&lt;img src=&quot;Assets/Cytocoins.svg&quot; class=&quot;smallicon&quot;&gt;
+&lt;&lt;set _num to $money&gt;&gt;&lt;&lt;if _num &lt; 0&gt;&gt;-&lt;&lt;set _num to _num*-1&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;set _numstring to &quot;&quot;&gt;&gt;&lt;&lt;for _i to _num; _i gte 1; _i = Math.trunc(_i/1000)&gt;&gt;&lt;&lt;if (&quot;&quot;+_i).length &lt; 4&gt;&gt;&lt;&lt;set _numstring to (_i+_numstring)&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;for  _j to (&quot;&quot; +(_i - (Math.trunc(_i/1000)*1000))); _j.length&lt;4; _j = &quot;0&quot;+_j&gt;&gt;&lt;&lt;if _j.length == 3&gt;&gt;&lt;&lt;set _numstring to &quot;,&quot;+_j+_numstring&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/for&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/for&gt;&gt;&lt;&lt;if _numstring == &quot;&quot;&gt;&gt;&lt;&lt;set _numstring to &quot;0&quot;&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;print _numstring&gt;&gt;&lt;img src=&quot;Assets/Cytocoins.svg&quot; class=&quot;smallicon&quot;&gt;
 
 &lt;/div&gt;&lt;&lt;if $researchdatabase[&quot;Impact Analysis&quot;].completed == true&gt;&gt;&lt;h2&gt;&lt;&lt;print (Math.trunc($compliance * 10000)/100)&gt;&gt;% Public Compliance&lt;/h2&gt;&lt;p class=&quot;infected&quot;&gt;Health Measure effect on Infection: &lt;&lt;print (Math.trunc($infectionhealthmeasures * 10000)/100)&gt;&gt;% (&lt;&lt;print (Math.trunc((1 +($infectionhealthmeasures-1)*$compliance) * 10000)/100)&gt;&gt;%)&lt;/p&gt;
 &lt;p class=&quot;recovered&quot;&gt;Health Measure effect on Recovery: &lt;&lt;print (Math.trunc($recoveryhealthmeasures * 10000)/100)&gt;&gt;% (&lt;&lt;print (Math.trunc((1 +($recoveryhealthmeasures-1)*$compliance) * 10000)/100)&gt;&gt;%)&lt;/p&gt;
@@ -708,7 +708,7 @@ Cytocoins: $money&lt;img src=&quot;Assets/Cytocoins.svg&quot; class=&quot;smalli
 </tw-passagedata><tw-passagedata pid="10" name="Research" tags="research" position="550,850" size="200,100">&lt;div style=&quot;float:left; width:75vw;&quot;&gt;&lt;img src=&quot;Assets/Research.svg&quot; class=&quot;bigicon&quot;&gt;&lt;h1&gt;Research&lt;/h1&gt;&lt;/div&gt;&lt;div style=&quot;float:right; width:18vw;&quot;&gt;
 [[Dashboard]] &lt;img src=&quot;Assets/Dashboard.svg&quot; class=&quot;smallicon&quot;&gt;
 Actions: $actions/$maxactions
-Cytocoins: &lt;&lt;set _num to $money&gt;&gt;&lt;&lt;if _num &lt; 0&gt;&gt;-&lt;&lt;set _num to _num*-1&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;set _numstring to &quot;&quot;&gt;&gt;&lt;&lt;for _i to _num; _i gte 1; _i = Math.trunc(_i/1000)&gt;&gt;&lt;&lt;if (&quot;&quot;+_i).length &lt; 4&gt;&gt;&lt;&lt;set _numstring to (_i+_numstring)&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;for  _j to (&quot;&quot; +(_i - (Math.trunc(_i/1000)*1000))); _j.length&lt;4; _j = &quot;0&quot;+_j&gt;&gt;&lt;&lt;if _j.length == 3&gt;&gt;&lt;&lt;set _numstring to &quot;,&quot;+_j+_numstring&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/for&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/for&gt;&gt;&lt;&lt;if _numstring == &quot;&quot;&gt;&gt;&lt;&lt;set _numstring to &quot;0&quot;&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;print _numstring&gt;&gt;&lt;img src=&quot;Assets/Cytocoins.svg&quot; class=&quot;smallicon&quot;&gt;
+&lt;&lt;set _num to $money&gt;&gt;&lt;&lt;if _num &lt; 0&gt;&gt;-&lt;&lt;set _num to _num*-1&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;set _numstring to &quot;&quot;&gt;&gt;&lt;&lt;for _i to _num; _i gte 1; _i = Math.trunc(_i/1000)&gt;&gt;&lt;&lt;if (&quot;&quot;+_i).length &lt; 4&gt;&gt;&lt;&lt;set _numstring to (_i+_numstring)&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;for  _j to (&quot;&quot; +(_i - (Math.trunc(_i/1000)*1000))); _j.length&lt;4; _j = &quot;0&quot;+_j&gt;&gt;&lt;&lt;if _j.length == 3&gt;&gt;&lt;&lt;set _numstring to &quot;,&quot;+_j+_numstring&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/for&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/for&gt;&gt;&lt;&lt;if _numstring == &quot;&quot;&gt;&gt;&lt;&lt;set _numstring to &quot;0&quot;&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;print _numstring&gt;&gt;&lt;img src=&quot;Assets/Cytocoins.svg&quot; class=&quot;smallicon&quot;&gt;
 
 &lt;/div&gt;&lt;&lt;if $researchdatabase[&quot;Transmission Monitoring&quot;].completed == true&gt;&gt;
 &lt;h2&gt;R: &lt;&lt;print Math.trunc(($pathogendatabase[$pathogen].infectionrate*$infectionmultiplier) / ($pathogendatabase[$pathogen].recoveryrate*$recoverymultiplier)*($susceptible / ($susceptible + $infected + $recovered))*10000)/10000&gt;&gt;&lt;/h2&gt;&lt;p class=&quot;infected&quot;&gt;Infection Rate: &lt;&lt;print $pathogendatabase[$pathogen].infectionrate*$infectionmultiplier&gt;&gt;&lt;/p&gt;
@@ -784,7 +784,7 @@ Dear $playername.
 
 &lt;p class=&quot;bad&quot;&gt;You have failed to eradicate $epidemicname, and have received three strikes. I&#39;m afraid I am going to have to let you go.&lt;/p&gt;
 
-Any amount of Cytokoins that were funded to you over the course of the epidemic is expected to be paid back to Epidemiological in full, out of your pocket. You currently owe &lt;&lt;print (10000 - $money + ($strikes*2500))&gt;&gt;&lt;img src=&quot;Assets/Cytocoins.svg&quot; class=&quot;smallicon&quot;&gt; (Whatever was still in your Epidemiological finance account has already been seized)
+Any amount of Cytokoins that were funded to you over the course of the epidemic is expected to be paid back to Epidemiological in full, out of your pocket. You currently owe &lt;&lt;set _num to (10000 - $money + ($strikes*2500))&gt;&gt;&lt;&lt;if _num &lt; 0&gt;&gt;-&lt;&lt;set _num to _num*-1&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;set _numstring to &quot;&quot;&gt;&gt;&lt;&lt;for _i to _num; _i gte 1; _i = Math.trunc(_i/1000)&gt;&gt;&lt;&lt;if (&quot;&quot;+_i).length &lt; 4&gt;&gt;&lt;&lt;set _numstring to (_i+_numstring)&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;for  _j to (&quot;&quot; +(_i - (Math.trunc(_i/1000)*1000))); _j.length&lt;4; _j = &quot;0&quot;+_j&gt;&gt;&lt;&lt;if _j.length == 3&gt;&gt;&lt;&lt;set _numstring to &quot;,&quot;+_j+_numstring&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/for&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/for&gt;&gt;&lt;&lt;if _numstring == &quot;&quot;&gt;&gt;&lt;&lt;set _numstring to &quot;0&quot;&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;print _numstring&gt;&gt;&lt;img src=&quot;Assets/Cytocoins.svg&quot; class=&quot;smallicon&quot;&gt; (Whatever was still in your Epidemiological finance account has already been seized)
 
 The pathogen was $pathogen.
 &lt;&lt;for _i to 0; _i &lt; $pathogendatabase[$pathogen].phylogeny.length; _i++&gt;&gt;&lt;&lt;print $pathogendatabase[$pathogen].phylogeny[_i]&gt;&gt;, &lt;&lt;/for&gt;&gt;$pathogen
@@ -813,7 +813,7 @@ Congratulations, $playername!
 
 &lt;p class=&quot;good&quot;&gt;You have stopped the outbreak!&lt;/p&gt;
 You have done so while receiving $strikes strike(s)!
-You have spent &lt;&lt;print (10000 - $money + ($strikes*2500))&gt;&gt;&lt;img src=&quot;Assets/Cytocoins.svg&quot; class=&quot;smallicon&quot;&gt;. Normally we would make you pay this back to us out of your own pocket but, considering how well you did, we can call it even.
+You have spent &lt;&lt;set _num to (10000 - $money + ($strikes*2500))&gt;&gt;&lt;&lt;if _num &lt; 0&gt;&gt;-&lt;&lt;set _num to _num*-1&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;set _numstring to &quot;&quot;&gt;&gt;&lt;&lt;for _i to _num; _i gte 1; _i = Math.trunc(_i/1000)&gt;&gt;&lt;&lt;if (&quot;&quot;+_i).length &lt; 4&gt;&gt;&lt;&lt;set _numstring to (_i+_numstring)&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;for  _j to (&quot;&quot; +(_i - (Math.trunc(_i/1000)*1000))); _j.length&lt;4; _j = &quot;0&quot;+_j&gt;&gt;&lt;&lt;if _j.length == 3&gt;&gt;&lt;&lt;set _numstring to &quot;,&quot;+_j+_numstring&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/for&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/for&gt;&gt;&lt;&lt;if _numstring == &quot;&quot;&gt;&gt;&lt;&lt;set _numstring to &quot;0&quot;&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;print _numstring&gt;&gt;&lt;img src=&quot;Assets/Cytocoins.svg&quot; class=&quot;smallicon&quot;&gt;. Normally we would make you pay this back to us out of your own pocket but, considering how well you did, we can call it even.
 
 The pathogen was $pathogen.
 &lt;&lt;for _i to 0; _i &lt; $pathogendatabase[$pathogen].phylogeny.length; _i++&gt;&gt;&lt;&lt;print $pathogendatabase[$pathogen].phylogeny[_i]&gt;&gt;, &lt;&lt;/for&gt;&gt;$pathogen
@@ -882,7 +882,7 @@ Immunopolis
 &lt;h2&gt;Cultured Discoveries, Epidemic Recoveries!&lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="20" name="Research Results" tags="Letter inbox" position="125,1300" size="100,100">&lt;&lt;set _emailgreetings to [&quot;Hello.&quot;,&quot;Hello $playername!&quot;,&quot;Hi.&quot;,&quot;Hi $playername!&quot;,&quot;Greetings&quot;,&quot;$playername!&quot;,&quot;Hey.&quot;,&quot;Hey $playername!&quot;,&quot;Reece here,&quot;,&quot;Reece Urchin here,&quot;,&quot;What&#39;s up?&quot;,&quot;What&#39;s up $playername?&quot;,&quot;Wassup?&quot;,&quot;Whatya up to, $playername?&quot;,&quot;How you doin?&quot;]&gt;&gt;&lt;&lt;set _emailvaledictions to [&quot;Thanks,\n\nReece&quot;,&quot;Goodbye,\n\nReece&quot;,&quot;Bye,\n\nReece&quot;,&quot;Don&#39;t hesitate to get in touch again,\n\nReece&quot;,&quot;I&#39;ll get back to work then,\n\nReece&quot;,&quot;Talk to you soon,\n\nReece&quot;,&quot;Reece.&quot;,&quot;Reece Urchin.&quot;,&quot;The Urchin&#39;s back to Researching&quot;,&quot;I&#39;m back to Researching,\n\nReece Urchin&quot;,&quot;Reece Out!&quot;, &quot;Peace out, Reece&#39;s out!&quot;,&quot;Peace,\n\nReece.&quot;,&quot;See you later alligator,\n\nReece.&quot;,&quot;Stay Awesome $playername,\n\nReece.&quot;]&gt;&gt;/*
 # This email is found at the bottom of Pass Time, and is given, delayed, after conducting research.
 
-*/[[Back to Inbox |Inbox]] &lt;img src=&quot;Assets/Inbox.svg&quot; class=&quot;smallicon&quot;&gt;&lt;&lt;set $mailindex to $mailname.indexOf(&quot;Research Results&quot;)&gt;&gt;&lt;&lt;if $mailread[$mailindex]==false&gt;&gt;&lt;&lt;set $reecegreeting to random(0,14)&gt;&gt; &lt;&lt;set $reecevalediction to random(0,14)&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;set $mailread[$mailindex] to true&gt;&gt;
+*/[[Back to Inbox |Inbox]] &lt;img src=&quot;Assets/Inbox.svg&quot; class=&quot;smallicon&quot;&gt;&lt;&lt;set $mailindex to $mailname.indexOf(&quot;Research Results&quot;)&gt;&gt;&lt;&lt;if $mailread[$mailindex]==false&gt;&gt;&lt;&lt;set $reecegreeting to random(0,14)&gt;&gt;&lt;&lt;set $reecevalediction to random(0,14)&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;set $mailread[$mailindex] to true&gt;&gt;
 From: $mailsender[$mailindex]
 Received on: $mailfulldate[$mailindex]
 &lt;h1&gt;$mailname[$mailindex]&lt;/h1&gt;
@@ -910,12 +910,12 @@ Immunopolis
 
 # This email is found at the bottom of Pass Time, and is given, delayed, after conducting a health measure.
 
-*/[[Back to Inbox |Inbox]] &lt;img src=&quot;Assets/Inbox.svg&quot; class=&quot;smallicon&quot;&gt;&lt;&lt;set $mailindex to $mailname.indexOf(&quot;Health Measure Results&quot;)&gt;&gt;&lt;&lt;if $mailread[$mailindex]==false&gt;&gt;&lt;&lt;set $conniegreeting to random(0,14)&gt;&gt; &lt;&lt;set $connievalediction to random(0,14)&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;set $mailread[$mailindex] to true&gt;&gt;
+*/[[Back to Inbox |Inbox]] &lt;img src=&quot;Assets/Inbox.svg&quot; class=&quot;smallicon&quot;&gt;&lt;&lt;set $mailindex to $mailname.indexOf(&quot;Health Measure Results&quot;)&gt;&gt;&lt;&lt;if $mailread[$mailindex]==false&gt;&gt;&lt;&lt;set $conniegreeting to random(0,14)&gt;&gt;&lt;&lt;set $connievalediction to random(0,14)&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;set $mailread[$mailindex] to true&gt;&gt;
 From: $mailsender[$mailindex]
 Received on: $mailfulldate[$mailindex]
 &lt;h1&gt;$mailname[$mailindex]&lt;/h1&gt;
 
-Hey $playername!
+&lt;&lt;print _emailgreetings[$conniegreeting]&gt;&gt;
 
 I have communicated the Health Measure&lt;&lt;if $lasthealthmeasures.length &gt; 1&gt;&gt;s&lt;&lt;/if&gt;&gt; you requested. Here are the effects that I have observed:
 
@@ -925,9 +925,7 @@ I have communicated the Health Measure&lt;&lt;if $lasthealthmeasures.length &gt;
 &lt;&lt;/if&gt;&gt;&lt;&lt;/for&gt;&gt;
 Remember, if you lose this email you can always review this information from your Dashboard.
 
-If there&#39;s anything else you need me to communicate, contact me.
-
-Con. Tay. G.
+&lt;&lt;print _emailvaledictions[$connievalediction]&gt;&gt;
 
 &lt;div style=&quot;border-top: black dashed 0.5vw;&quot;&gt;
 Constance Taylor Gionne
@@ -941,7 +939,7 @@ Immunopolis
 
 # This email is found at the bottom of Pass Time, and is given, delayed, after conducting a lab test.
 
-*/[[Back to Inbox |Inbox]] &lt;img src=&quot;Assets/Inbox.svg&quot; class=&quot;smallicon&quot;&gt;&lt;&lt;set $mailindex to $mailname.indexOf(&quot;Lab Test Results&quot;)&gt;&gt;&lt;&lt;if $mailread[$mailindex]==false&gt;&gt;&lt;&lt;set $elisagreeting to random(0,14)&gt;&gt; &lt;&lt;set $elisavalediction to random(0,14)&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;set $mailread[$mailindex] to true&gt;&gt;
+*/[[Back to Inbox |Inbox]] &lt;img src=&quot;Assets/Inbox.svg&quot; class=&quot;smallicon&quot;&gt;&lt;&lt;set $mailindex to $mailname.indexOf(&quot;Lab Test Results&quot;)&gt;&gt;&lt;&lt;if $mailread[$mailindex]==false&gt;&gt;&lt;&lt;set $elisagreeting to random(0,14)&gt;&gt;&lt;&lt;set $elisavalediction to random(0,14)&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;set $mailread[$mailindex] to true&gt;&gt;
 From: $mailsender[$mailindex]
 Received on: $mailfulldate[$mailindex]
 &lt;h1&gt;$mailname[$mailindex]&lt;/h1&gt;
@@ -995,7 +993,7 @@ $newspeople[_randomindex1] $newsstory[_randomindex2]
 </tw-passagedata><tw-passagedata pid="25" name="Review" tags="hints" position="1100,400" size="100,100">&lt;div style=&quot;float:left; width:75vw;&quot;&gt;&lt;img src=&quot;Assets/Hints.svg&quot; class=&quot;bigicon&quot;&gt;&lt;h1&gt;Review&lt;/h1&gt;&lt;/div&gt;&lt;div style=&quot;float:right; width:18vw;&quot;&gt;
 [[Dashboard]] &lt;img src=&quot;Assets/Dashboard.svg&quot; class=&quot;smallicon&quot;&gt;
 Actions: $actions/$maxactions
-Cytocoins: &lt;&lt;set _num to $money&gt;&gt;&lt;&lt;if _num &lt; 0&gt;&gt;-&lt;&lt;set _num to _num*-1&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;set _numstring to &quot;&quot;&gt;&gt;&lt;&lt;for _i to _num; _i gte 1; _i = Math.trunc(_i/1000)&gt;&gt;&lt;&lt;if (&quot;&quot;+_i).length &lt; 4&gt;&gt;&lt;&lt;set _numstring to (_i+_numstring)&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;for  _j to (&quot;&quot; +(_i - (Math.trunc(_i/1000)*1000))); _j.length&lt;4; _j = &quot;0&quot;+_j&gt;&gt;&lt;&lt;if _j.length == 3&gt;&gt;&lt;&lt;set _numstring to &quot;,&quot;+_j+_numstring&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/for&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/for&gt;&gt;&lt;&lt;if _numstring == &quot;&quot;&gt;&gt;&lt;&lt;set _numstring to &quot;0&quot;&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;print _numstring&gt;&gt;&lt;img src=&quot;Assets/Cytocoins.svg&quot; class=&quot;smallicon&quot;&gt;
+&lt;&lt;set _num to $money&gt;&gt;&lt;&lt;if _num &lt; 0&gt;&gt;-&lt;&lt;set _num to _num*-1&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;set _numstring to &quot;&quot;&gt;&gt;&lt;&lt;for _i to _num; _i gte 1; _i = Math.trunc(_i/1000)&gt;&gt;&lt;&lt;if (&quot;&quot;+_i).length &lt; 4&gt;&gt;&lt;&lt;set _numstring to (_i+_numstring)&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;for  _j to (&quot;&quot; +(_i - (Math.trunc(_i/1000)*1000))); _j.length&lt;4; _j = &quot;0&quot;+_j&gt;&gt;&lt;&lt;if _j.length == 3&gt;&gt;&lt;&lt;set _numstring to &quot;,&quot;+_j+_numstring&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/for&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/for&gt;&gt;&lt;&lt;if _numstring == &quot;&quot;&gt;&gt;&lt;&lt;set _numstring to &quot;0&quot;&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;print _numstring&gt;&gt;&lt;img src=&quot;Assets/Cytocoins.svg&quot; class=&quot;smallicon&quot;&gt;
 
 &lt;/div&gt;/*
 
@@ -1526,7 +1524,7 @@ $playername.
             	result: &quot;You can now use animal subjects in your research and lab tests.&quot;,
             },
             &quot;Apply for Grant&quot;: {
-            	result: &quot;You have received a grant of 2500&lt;img src=&#39;Assets/Cytocoins.svg&#39; class=&#39;smallicon&#39;&gt;&quot;,
+            	result: &quot;You have received a grant of 2,500&lt;img src=&#39;Assets/Cytocoins.svg&#39; class=&#39;smallicon&#39;&gt;&quot;,
             },
             &quot;Boost Compliance Gain&quot;: {
             	result: &quot;All health measures will have 5% improved effects on Compliance&quot;,
@@ -1613,7 +1611,7 @@ $playername.
             	result: &quot;You can now view the effect your health measures have on Compliance, Infection, Recovery and Mortality from your Health Measures tab.&quot;,
             },
             &quot;Life Savings&quot;: {
-            	result: &quot;You have found 5000&lt;img src=&#39;Assets/Cytocoins.svg&#39; class=&#39;smallicon&#39;&gt; in your savings account!&quot;,
+            	result: &quot;You have found 5,000&lt;img src=&#39;Assets/Cytocoins.svg&#39; class=&#39;smallicon&#39;&gt; in your savings account!&quot;,
             },
             &quot;Microscopy&quot;: {
             	result: &quot;You now have access to lab tests that require microscope use.&quot;,
@@ -1890,7 +1888,7 @@ $playername.
         completed: false,
     },
     &quot;Apply for Grant&quot;: {
-    	description: &quot;Apply for a grant with the bank, to receive 2500&lt;img src=&#39;Assets/Cytocoins.svg&#39; class=&#39;smallicon&#39;&gt;&quot;,
+    	description: &quot;Apply for a grant with the bank, to receive 2,500&lt;img src=&#39;Assets/Cytocoins.svg&#39; class=&#39;smallicon&#39;&gt;&quot;,
         effect: &quot;variables().money = variables().money + 2500; variables().newmoney = true;&quot;,
         delay: 7,
         cost: 0,
@@ -2147,7 +2145,7 @@ $playername.
         completed: false,
     },
     &quot;Life Savings&quot;: {
-    	description: &quot;Apply for a grant with the bank, to receive 5000&lt;img src=&#39;Assets/Cytocoins.svg&#39; class=&#39;smallicon&#39;&gt;&quot;,
+    	description: &quot;Apply for a grant with the bank, to receive 5,000&lt;img src=&#39;Assets/Cytocoins.svg&#39; class=&#39;smallicon&#39;&gt;&quot;,
         effect: &quot;variables().money = variables().money + 5000; variables().newmoney = true;&quot;,
         delay: 5,
         cost: 0,
@@ -2728,7 +2726,7 @@ $playername.
 
 # This email is found at the bottom of the Application Result passage, and is given when the application result letter is viewed for the first time.
 
-*/[[Back to Inbox |Inbox]] &lt;img src=&quot;Assets/Inbox.svg&quot; class=&quot;smallicon&quot;&gt;&lt;&lt;set $mailindex to $mailname.indexOf(&quot;New Unlocks&quot;)&gt;&gt;&lt;&lt;if $mailread[$mailindex]==false&gt;&gt;&lt;&lt;set $annagreeting to random(0,14)&gt;&gt; &lt;&lt;set $annavalediction to random(0,14)&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;set $mailread[$mailindex] to true&gt;&gt;
+*/[[Back to Inbox |Inbox]] &lt;img src=&quot;Assets/Inbox.svg&quot; class=&quot;smallicon&quot;&gt;&lt;&lt;set $mailindex to $mailname.indexOf(&quot;New Unlocks&quot;)&gt;&gt;&lt;&lt;if $mailread[$mailindex]==false&gt;&gt;&lt;&lt;set $annagreeting to random(0,14)&gt;&gt;&lt;&lt;set $annavalediction to random(0,14)&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;set $mailread[$mailindex] to true&gt;&gt;
 From: $mailsender[$mailindex]
 Received on: $mailfulldate[$mailindex]
 &lt;h1&gt;$mailname[$mailindex]&lt;/h1&gt;
@@ -2857,7 +2855,7 @@ $playername.
 &lt;&lt;/for&gt;&gt;</tw-passagedata><tw-passagedata pid="52" name="Test 2" tags="" position="700,100" size="100,100">[[DEBUG]]
 [[Test 2]]
 &lt;&lt;if (($pathogendatabase[$pathogen].infectionrate*$infectionmultiplier) / ($pathogendatabase[$pathogen].recoveryrate*$recoverymultiplier)*($susceptible / ($susceptible + $infected + $recovered)) * $infected &lt; 20) and (($pathogendatabase[$pathogen].infectionrate*$infectionmultiplier) / ($pathogendatabase[$pathogen].recoveryrate*$recoverymultiplier)*($susceptible / ($susceptible + $infected + $recovered)) &lt; 1) and ($infected &lt; 1000) or ($infected == 0)&gt;&gt;</tw-passagedata><tw-passagedata pid="53" name="End" tags="" position="100,600" size="100,100">&lt;h2&gt;Thank you for playing Epidemiological, $playername!&lt;/h2&gt;
-&lt;&lt;if $successful == true&gt;&gt;&lt;p class=&quot;good&quot;&gt;$epidemicname was successfully stopped after $days days, with $money&lt;img src=&quot;Assets/Cytocoins.svg&quot; class=&quot;smallicon&quot;&gt; remaining!&lt;/p&gt;&lt;&lt;else&gt;&gt;&lt;p class=&quot;bad&quot;&gt;$epidemicname was not prevented in time. You were fired after working at the company for $days days.&lt;/p&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $successful == true&gt;&gt;&lt;p class=&quot;good&quot;&gt;$epidemicname was successfully stopped after $days days, with&lt;&lt;set _num to $money&gt;&gt;&lt;&lt;if _num &lt; 0&gt;&gt;-&lt;&lt;set _num to _num*-1&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;set _numstring to &quot;&quot;&gt;&gt;&lt;&lt;for _i to _num; _i gte 1; _i = Math.trunc(_i/1000)&gt;&gt;&lt;&lt;if (&quot;&quot;+_i).length &lt; 4&gt;&gt;&lt;&lt;set _numstring to (_i+_numstring)&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;for  _j to (&quot;&quot; +(_i - (Math.trunc(_i/1000)*1000))); _j.length&lt;4; _j = &quot;0&quot;+_j&gt;&gt;&lt;&lt;if _j.length == 3&gt;&gt;&lt;&lt;set _numstring to &quot;,&quot;+_j+_numstring&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/for&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/for&gt;&gt;&lt;&lt;if _numstring == &quot;&quot;&gt;&gt;&lt;&lt;set _numstring to &quot;0&quot;&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;print _numstring&gt;&gt;&lt;img src=&quot;Assets/Cytocoins.svg&quot; class=&quot;smallicon&quot;&gt; remaining!&lt;/p&gt;&lt;&lt;else&gt;&gt;&lt;p class=&quot;bad&quot;&gt;$epidemicname was not prevented in time. You were fired after working at the company for $days days.&lt;/p&gt;&lt;&lt;/if&gt;&gt;
 
 Please, don&#39;t forget to fill out this form to give feedback about your experience:
 
