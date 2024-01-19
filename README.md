@@ -1,4 +1,4 @@
-<h1>Participant Information Sheet</h1>
+# Participant Information Sheet
 
 
 **<ins>Name of department:</ins>** Strathclyde Institute of Pharmacy & Biomedical Sciences
@@ -75,7 +75,7 @@ Email: sipbs-ethics@strath.ac.uk
 
 
 
-<h1>Once you have read the form above, you can choose to participate in the study:</h1>
+# Once you have read the form above, you can choose to participate in the study:
 
 Epidemiological is a epidemiology/clinical microbiology virtual escape room with the purpose of educating undergraduate microbiologists about the various biochemical tests that can be done to identify pathogens, as well as what an epidemiologist does.
 
