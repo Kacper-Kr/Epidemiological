@@ -1,9 +1,9 @@
 **<h1>Participant Information Sheet</h1>**
 
 
-**Name of department:** Strathclyde Institute of Pharmacy & Biomedical Sciences
+**<ins>Name of department:</ins>** Strathclyde Institute of Pharmacy & Biomedical Sciences
 
-**Title of the study:** Do Virtual Escape Rooms promote student learning in Clinical Microbiology?
+**<ins>Title of the study:</ins>** Do Virtual Escape Rooms promote student learning in Clinical Microbiology?
 
 
 
